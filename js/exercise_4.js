@@ -5,7 +5,7 @@
 var mapId = 'gooberfer.02m2dhjn';
 
 // And this is my access token, use yours.
-var accessToken = 'pk.eyJ1Ijoid2lsbC1icmVpdGtyZXV0eiIsImEiOiItMTJGWEF3In0.HEvuRMMVxBVR5-oDYvudxw';
+var accessToken = 'pk.eyJ1IjoiZ29vYmVyZmVyIiwiYSI6ImNpbnh2b2xjYTE3cml1aWtqNXc4ZWNqaWwifQ.gTQAK9D4U0xa9I3Akp3Oew';
 
 // Create the map object with your mapId and token,
 // referencing the DOM element where you want the map to go.
