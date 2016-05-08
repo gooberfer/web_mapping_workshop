@@ -69,3 +69,22 @@ map.on('click',function(e){
     $('#info').fadeOut(200);
     $('#info').empty();
 });
+
+var myLocation = L.mapbox.featureLayer().addTo(map);
+
+map.on('locationfound', function(e) {
+
+    myLocation.setGeoJSON({
+        type: 'Feature',
+        geometry: {
+            type: 'Point',
+            coordinates: [e.latlng.lng, e.latlng.lat]
+        },
+        properties: {
+            'title': 'Here I am!',
+            'marker-color': '#ff8888',
+            'marker-symbol': 'star'
+        }
+    });
+
+});
